@@ -40,7 +40,7 @@
                     <p>¿Cansado de no dar en el blanco? ¿Otra vez midio mal la distancia o el viento?</p>
                     <p>No desespere, acertar al objetivo esta al alcance de su arma y su billetera.</p>
                     <p>Esa sensación de frustracion esta a punto de desaparecer, solamente debe adherirse a alguno de nuestros cursos.</p>
-                    <p>Actualmente tenemos expertos alrededor del mundo para guiarlo, asistirlo (y cubrirlo en caso de necesidad)</p>
+                    <p>Actualmente tenemos expertos alrededor del mundo para guiarlo, asistirlo (y cubrirlo en caso de necesidad).</p>
                     <p>Solamente con completar la inscripción al curso y saber por cual lado del arma sale el proyectil estará listo para empezar.</p>
                     <!-- EL CURSO DE SUICIDE BOMBER NO TIENE EJEMPLOS EN VIVO POR CAUSAS OBVIAS -->
 
