@@ -1,2 +1,1 @@
-# AIO-Mod1
-Actividad Integradora Obligatoria - Módulo 1
+REALMENTE NO TENGO NADA QUE DECIR, MAS QUE TOMA POR CURIOSO
