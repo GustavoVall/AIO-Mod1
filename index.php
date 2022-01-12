@@ -5,31 +5,16 @@
             STOP MISSING AND START KILLING
         </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="responsivo.css">
+        <link rel="stylesheet" type="text/css" href="css/responsivo.css">
 
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                <li class="boton">
-                    <a href="index.php">HOME</a>
-                </li>
-                <li class="boton">
-                    <a href="queesloquehago.html">PROXIMAMENTE</a>
-                </li>
-                <li class="boton">
-                    <a href="mis_contenidos.html">PROXIMAMENTE</a>
-                </li>
-                <li class="boton">
-                    <a href="contactame.html">PROXIMAMENTE</a>
-                </li>
-                </ul>
-            </nav>
-        </header>
+    <?php
+    include('header.php')
+    ?>
         <main>
             <div class="container1">
                 <section>
@@ -84,12 +69,7 @@
                     //Constantes//
 
                     define('HG_cal', array ('.380acp','9x19mm','.38 spl','.357 Magnum','.44 Magnum','.454 casull' ));
-                    
-                    /* Como quiero mostrar multiples valores y no me deja tirando "echo HG_cal [x],[y] 
-                    Voy a probar algo que no se vió en clase pero lo googlie.
-                    */
-
-                   // $HGDEFENSIVE = join(',', HG_cal);//
+                                        
                     ?>
 
                     <ul>
