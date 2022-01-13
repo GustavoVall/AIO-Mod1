@@ -8,10 +8,10 @@
                     <a href="cursos.php">Cursos e Instructores</a>
                 </li>
                 <li class="boton">
-                    <a href="mis_contenidos.html">PROXIMAMENTE</a>
+                    <a href="contacto.php">Contacto</a>
                 </li>
                 <li class="boton">
-                    <a href="contactame.html">PROXIMAMENTE</a>
+                    <a href="#proximamente">PROXIMAMENTE</a>
                 </li>
                 </ul>
             </nav>

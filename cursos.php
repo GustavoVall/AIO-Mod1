@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>
-            STOP MISSING AND START KILLING
+           Cursos
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -15,32 +15,91 @@
     <body>
 
     <?php
-    include('header.php')
+    include('header.php') // En esta página esta lo de las Estructuras de control y el GET
     ?>
 
-        <main>
+        <main> 
+        
             <div class="container1">
-
                 <section>
-                    
                     <h2 id="centrado" class="title30">
-                        STOP MISSING AND START KILLING
+                        Nuestros Cursos e Instructores
                     </h2>
-
-                    <p>¿Cansado de no dar en el blanco? ¿Otra vez midio mal la distancia o el viento?</p>
-                    <p>No desespere, acertar al objetivo esta al alcance de su arma y su billetera.</p>
-                    <p>Esa sensación de frustracion esta a punto de desaparecer, solamente debe adherirse a alguno de nuestros cursos.</p>
-                    <p>Actualmente tenemos expertos alrededor del mundo para guiarlo, asistirlo (y cubrirlo en caso de necesidad).</p>
-                    <p>Solamente con completar la inscripción al curso y saber por cual lado del arma sale el proyectil estará listo para empezar.</p>
-                    <!-- EL CURSO DE SUICIDE BOMBER NO TIENE EJEMPLOS EN VIVO POR CAUSAS OBVIAS -->
-
+                    <p>Listo para empezar? Ansioso por acertarle a algo?</p>
+                    <p>Nuestra Magia Negra ($$) nos permite tener los mejores Instructores de todos los tiempos.</p>
+                    <p>Aquí una lista de los Cursos disponibles para su región:</p>
                 </section>
 
-                <article id="video1">
-                <img src="Imagenes/missed.png">
-                </article>
+                <article id="video2">
 
+                <img src="Imagenes/rambo.jpg">
+                <img src="Imagenes/terminator.jpg">
+
+                </article>
             </div>
+
+            <section class="curso_contenido">              
+                <h3> Cursos:</h3>
+
+                <ul class="curso_boton">
+
+                <li> <a href="cursos.php?training=bc"> Boot Camp</a></li>
+                <li> <a href="cursos.php?training=iaf"> Introduccion a las armas de fuego</a></li>
+                <li> <a href="cursos.php?training=dac"> Disparo de Arma Corta</a></li>
+
+                </ul>
+
+
+
+            
+
+             <!-- ESTRUCTURAS DE CONTROL -->
+
+                <?php
+                $training=null;
+                $instructor=null;
+                $contenido=null;
+                $img=null;
+
+                if (isset($_GET['training']))
+                    {
+
+                    switch ($_GET['training']) 
+                    {
+                    case 'bc':
+                    $training = 'Boot Camp';
+                    $contenido = 'Entrenamiento Físico y Mental';
+                    $instructor = 'Instructor : Leónidas';
+                    $img = 'Imagenes/leo.jpg';
+                    break;
+
+                    case 'iaf':
+                    $training = 'Introducción a las Armas de Fuego';
+                    $contenido = 'Historia, Teoría, Limpieza y Ensamble de Armas';
+                    $instructor = 'Instructor : John M. Browning';
+                    $img = 'Imagenes/JMB.jpg';
+                    break;
+
+                    case 'dac':
+                    $training = 'Disparo de Arma Corta';
+                    $contenido = "Posiciones y Práctica en campo de tiro con armas hasta .357 magnum";
+                    $instructor = "Instructor : Jhon Wick";
+                    $img = 'Imagenes/JW.jpg';
+                    break;
+                    }   
+                }
+                ?>
+                
+
+
+        <div class="training_descripcion">
+            <h2> <?php echo $training; ?></h2>
+            <h3> <?php echo $instructor; ?></h3>
+            <article class="curso_img">
+            <img src="<?php echo $img; ?>" />
+            <h3> <?php echo $contenido; ?></h3>
+        </div>
+
         </main>
     </body>
 

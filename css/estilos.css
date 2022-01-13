@@ -52,6 +52,10 @@ font-size: 30px;
     margin-right: 10%;
 }
 
+#video2
+{
+    margin-right: 30%;
+}
 #centrado
 {
     text-align: center;
@@ -76,3 +80,21 @@ font-size: 30px;
     color:snow;
     text-decoration: none;
 }
+/* cursos.php */
+.curso_contenido {
+    padding: 2rem;
+}
+.curso_boton li {
+    list-style-type: none;
+}
+.curso_boton a {
+    color: green;
+    text-decoration: underline;
+}
+.curso_img{
+    width: 25%;
+}
+.curso_img img{
+    width: 25%;
+}
+
